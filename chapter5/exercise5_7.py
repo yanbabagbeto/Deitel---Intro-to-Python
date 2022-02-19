@@ -34,7 +34,7 @@ def duplicate_exist(my_list):
 def return_index(my_list):
     for i in range(len(my_list)):
         if my_list[i] in my_list[i+1:]:
-            return int(my_list[i+1:].index(my_list[i]))+1+i
+            return my_list.index(my_list[i], i+1)
             break
 
 
